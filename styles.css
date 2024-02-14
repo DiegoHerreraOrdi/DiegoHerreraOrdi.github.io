@@ -1,0 +1,5 @@
+.custom-img {
+    width: 50px; /* Ajusta este valor según tus necesidades */
+    height: auto; /* Esto garantiza que la imagen mantenga su proporción original */
+    margin: 0 5px; /* Opcional: Agrega un margen a los lados de la imagen */
+  }
