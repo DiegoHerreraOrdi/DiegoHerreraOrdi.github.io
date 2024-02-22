@@ -23,17 +23,18 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
                   <li class="nav-item">
-                      <a class="nav-link" href="#Administrator">Administrador</a>
+                    <a class="nav-link" href="#InicioSesion">Inicio de sesión</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Administrator">Administrador</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Ingeniero</a>
                   </li>
 
                   <li class="nav-item">
-                      <a class="nav-link">Ingeniero</a>
-                  </li>
-
-                  <li class="nav-item">
-                      <a class="nav-link">Supervisor</a>
+                    <a class="nav-link">Supervisor</a>
                   </li>
               </ul>
           </div>
@@ -58,46 +59,119 @@
       </div>
     </header>
 
-    <!--Administator-->
-    <section class="w-50 mx-auto text-center pt-5" id="Administrator">
-      <h1 class="p-3 fs-1 border-top border-3 text-danger">Administrador</h1>
+    <section class="w-75 mx-auto text-center pt-5" id="InicioSesion">
+      <h1 class="p-3 fs-1 border-top border-3 text-danger">Inicio de sesión</h1>
 
       <!--Inicio de sesión-->
-      <h1 class="fs-4 text-danger">Inicio de sesión</h1>
+      <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6">
+                <img src="./assets/img/Administrator/Admin01.png" alt="pantalla_inicio_sesion" class="img-fluid w-75 pb-5 pt-5">
+            </div>
+            <div class="col-md-6">
+                <p>
+                  Al entrar a OrdiHub el usuario podrá observar esta pantalla. Aquí podrá ingresar sus credenciales asignadas (usuario y contraseña).
+                </p>
+                <p>
+                  También encontrará un botón en forma de un ojo cerrado.
+                </p>
+                <img src="./assets/img/eye_closed_icon.png" alt="icono_ojo_cerrado">
+                <p>
+                  Al presionar este botón, se podrá ver la contraseña ingresada, y el botón cambiará a un ojo abierto. 
+                </p>
+                <img src="./assets/img/eye_icon.png" alt="icono_ojo_abierto">
+                <p>
+                  El "CheckBox" con la leyenda "Recuérdame" permitirá guardar los datos ingresados. Si se activa, al volver a ingresar a OrdiHub automáticamente se llenará el apartado de usuario y contraseña.
+                </p>
+                <p>
+                  Después de ingresar sus datos, hay que presionar el botón "Entrar". De esta forma la app podrá validar las credenciales de el usuario y darle el acceso necesario.
+                </p>
+            </div>
+        </div>
+      </div> 
+    </section>
 
-      <div class="container mt-4">
-        <p class="lead text-center">
-          Al acceder a OrdiHub se mostrará una pantalla de inicio de sesión. Al acceder a esta pantalla hay que ingresar los datos solicitados (Usuario y contraseña), en caso de requerir ver la contraseña puede presionar el siguiente ícono: 
-          <img src="./assets/img/eye_closed_icon.png" alt="eye_closed" class="img-fluid custom-img mx-auto d-block pt-3 pb-3">
-          De esta forma le permitirá ver la contraseña ingresada. Al dar click el ícono cambiará por este: 
-          <img src="./assets/img/eye_icon.png" alt="eye" class="img-fluid custom-img mx-auto d-block pt-3 pb-3">
-          El botón "Recuérdame" permitirá que se guarde el usuario y contraseña que se ingrese en el dispositivo. De esta forma al volver a entrar al OrdiHub automáticamente se escribirán dichos datos (El botón debe ser presionado antes de entrar a la aplicación).
-        </p>
-        <p class="lead text-center">
-          Después de haber ingresado los datos solicitados, se presiona el botón "Entrar".
-        </p>
-        <img src="./assets/img/Administrator/Admin01.png" alt="Inicio de sesión-Admin" class="img-fluid pt-3 pb-5">
-      </div>
+    <!--Administator-->
+    <section class="w-75 mx-auto text-center pt-5" id="Administrator">
+      <h1 class="p-3 fs-1 border-top border-3 text-danger">Administrador</h1>
 
       <!--Perfíl-->
-      <h1 class="border-top border-3 fs-4 text-danger pt-2">Perfíl</h1>
-
-      <div class="container mt-4">
-        <p class="lead text-center">
-          La ventana de perfíl está diseñada para mostrar al usuario sus datos y permitirle la modificación de los mismos, para este propósito encontrará tres cajas de edición de texto.
-        </p>
-        <img src="./assets/img/Administrator/Admin02.png" alt="Perfíl-Admin" class="img-fluid pt-3 pb-5">
-        <p class="lead text-center">
-          Al dar click en alguna de estas cajas e dispositivo entrará en modo teclado para escribir el nuevo nombre, nombre de usuario o contraseña (En caso de ya existir el nombre de usuario no se le permitirá modificar con los datos ingresados).
-        </p>
-        <img src="./assets/img/Administrator/Admin03.png" alt="Perfíl-Admin" class="img-fluid pt-3 pb-5">
-        <p class="lead text-center">
-          Al presionar el botón "Modificar Usuario", se mostrará una ventana de aviso con la siguiente leyenda: "Atención: ¿Está seguro de modificar sus credenciales?". En caso de no estar seguro puede presionar "Cancelar".
-        </p>
-        <img src="./assets/img/Administrator/Admin04.png" alt="Perfíl-Admin" class="img-fluid pt-3 pb-5">
+      <h1 class="fs-4 text-danger">Perfíl</h1>
+      <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6">
+              <p>
+                Si el usuario que ingresó tiene el rol de administrador, encontrará el apartado de "Perfíl". En esta pantalla podrá ver y modificar sus credenciales. En esta pantalla también encontrará el botón para mostrar su contraseña.
+              </p>
+              <p>
+                En caso de querer modificar su nombre de usuario o contraseña, hay que cambiar el apartado que se necesite modificar y dar click en el botón "Modificar Usuario". Cabe mencionar que los nombres de usuario son únicos, por ende al querer poner un nombre de usuario ya existente, no se le permitirá.
+              </p>
+              <p>
+                Al presionar el botón mencionado, aparecerá una ventana de diálogo con el siguiente mensaje: "Atención: ¿Está seguro de modificar sus credenciales?". En caso de no estar seguro puede cancelar el proceso.
+              </p>
+              <img src="./assets/img/Administrator/Admin03.png" alt="ventana_dialogo_modificar_usuario" class="w-75 pb-3 pt-3">
+              <p>
+                El botón de la parte superior izquiera le permite al usuario cerrar sesión, de esta forma podrá regresar a la pantalla de inicio de sesión.
+              </p>
+              <img src="./assets/img/logout_icon.png" alt="icono_cerrar_sesion" class="w-25 pb-3 pt-3">
+              <p>
+                En la parte inferior de la pantalla podrá ver una barra de navegación, esta le permitirá navegar por las distintas pantallas de OrdiHub. Para pasar a otra pantalla hay que presionar el botón asignado.
+              </p>
+            </div>
+            <div class="col-md-6">
+                <img src="./assets/img/Administrator/Admin02.png" alt="pantalla_administrador_perfil" class="img-fluid w-75 pb-5 pt-5">
+            </div>
+            
+        </div>
       </div>
-      
-  </section>
+
+      <!--Usuarios-->
+      <h1 class="border-top border-3 fs-4 text-danger pt-2">Usuarios</h1>
+      <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6">
+                <img src="./assets/img/Administrator/Admin04.png" alt="pantalla_inicio_sesion" class="img-fluid w-75 pb-5 pt-5">
+            </div>
+            <div class="col-md-6">
+                <p>
+                  En el apartado de usuarios encontrará un listado de los usuarios registrados en OrdiHub, además de 2 botones. Para agregar un usuario hay que presionar el siguiente botón.
+                </p>
+                <img src="./assets/img/add_icon.png" alt="icono_agregar_usuario" class="w-25 pb-3 pt-3">
+                <p>
+                  Aparecerá una ventana solicitando los datos de el usuario a agregar, los datos que hay que llenar son: nombre, nombre de usuario (no se puede repetir con otro usuario), contraseña y tipo. Al dar click en el tipo aparecerán 3 opciones: Ingeniero, Administrador y Supervisor, hay que seleccionar el requerido para el usuario.
+                </p>
+                <img src="./assets/img/Administrator/Admin06.png" alt="ventana_modificar_usuario" class="w-75 pb-3 pt-3">
+                <p>
+                  Para confirmar la creacion de el usuario hay que dar click en "Aceptar".
+                </p>
+            </div>
+        </div>
+        <p>
+          En el listado de usuarios encontrará un listado de los usuarios, cada usuario tiene un recuadro y cada recuadro tiene 3 opciones: Editar, eliminar y generar reporte. Para editar hay que presionar el ícono de lápiz en el recuadro de el usuario a modificar.
+        </p>
+        <img src="./assets/img/edit_icon.png" alt="icono_editar" class="pb-2">
+        <p>
+          Al clickear el ícono mencionado, aparecerá una ventana con los datos de el usuario. Aquí podrá modificar el apartado que desee cambiar. Para guardar los cambios hay que dar click en "Aceptar", también puede cancelar el proceso con "Cancelar".
+        </p>
+        <img src="./assets/img/Administrator/Admin05.png" alt="ventana_modificar_usuario" class="custom-img pb-3 pt-3">
+        <p>
+          Para eliminar a un usuario, hay que presionar el ícono de bote de basura, aparecerá una ventana de diálogo con el siguiente mensaje: "Atención: ¿Está seguro de eliminar al usuario *Nombre de usuario*?". En caso de no estar seguro puede cancelar el proceso.
+        </p>
+        <img src="./assets/img/delete_icon.png" alt="icono_eliminar">
+        <p>
+          En cada recuadro de usuario, en la parte izquierda hay un icono de usuario, este sirve para generar un reporte de usuario. Este reporte contendrá las actividades realizadas por el usuario en un periodo de tiempo.
+        </p>
+        <img src="./assets/img/user_icon.png" alt="icono_usuario">
+        <p>
+          Aparecerá una ventana con un candelario, aquí hay que seleccionar la fecha de inicio de generación de reporte. Al dar click en "Aceptar" aparecerá otra ventana igual, sólo que para la fecha final de el reporte. Al seleccionar las 2 fechas lo llevará a una <a href="#Reporte">pantalla de reporte</a>, donde se puede ver el reporte generado.
+        </p>
+        <img src="./assets/img/Administrator/Admin07.png" alt="ventana_modificar_usuario" class="custom-img pb-3 pt-3">
+        <p>
+          En la parte inferior hay otro botón con el ícono de una carpeta, este botón permitirá generar un reporte muy similar al de cada usuario, pero en esta <a href="#Reporte">pantalla de reporte</a> contiene las actividades realizadas de todos los usuarios en un periodo de tiempo.
+        </p>
+        <img src="./assets/img/generate_users_report.png" alt="icono_generar_reporte_usuarios" class="custom-img-icon pb-3 pt-3">
+      </div> 
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -3,3 +3,27 @@
     height: auto; /* Esto garantiza que la imagen mantenga su proporción original */
     margin: 0 5px; /* Opcional: Agrega un margen a los lados de la imagen */
   }
+
+  @media (min-width: 992px) {
+    .custom-img {
+      width: 50%;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .custom-img {
+      width: 75%;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .custom-img-icon {
+      width: 25%;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .custom-img-icon {
+      width: 50%;
+    }
+  }
