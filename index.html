@@ -30,7 +30,7 @@
                     <a class="nav-link" href="#Administrator">Administrador</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link">Ingeniero</a>
+                    <a class="nav-link" href="#Ingeniero">Ingeniero</a>
                   </li>
 
                   <li class="nav-item">
@@ -165,11 +165,139 @@
         <p>
           Aparecerá una ventana con un candelario, aquí hay que seleccionar la fecha de inicio de generación de reporte. Al dar click en "Aceptar" aparecerá otra ventana igual, sólo que para la fecha final de el reporte. Al seleccionar las 2 fechas lo llevará a una <a href="#Reporte">pantalla de reporte</a>, donde se puede ver el reporte generado.
         </p>
-        <img src="./assets/img/Administrator/Admin07.png" alt="ventana_modificar_usuario" class="custom-img pb-3 pt-3">
+        <img src="./assets/img/Administrator/Admin07.png" alt="ventana_seleccionar_fecha" class="custom-img pb-3 pt-3">
         <p>
           En la parte inferior hay otro botón con el ícono de una carpeta, este botón permitirá generar un reporte muy similar al de cada usuario, pero en esta <a href="#Reporte">pantalla de reporte</a> contiene las actividades realizadas de todos los usuarios en un periodo de tiempo.
         </p>
-        <img src="./assets/img/generate_users_report.png" alt="icono_generar_reporte_usuarios" class="custom-img-icon pb-3 pt-3">
+        <img src="./assets/img/generate_users_report.png" alt="icono_generar_reporte_usuarios" class="custom-img-icon pb-5 pt-3">
+      </div> 
+
+      <!--Ubicaciones-->
+      <h1 class="border-top border-3 fs-4 text-danger pt-2">Ubicaciones</h1>
+      <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6">
+              <p>
+                En esta pantalla el usuario podrá ver las ubicaciones guardadas en OrdiHub. Las ubicaciones que estén en esta pantalla serán las que se podrán asignar en cada proyecto.
+              </p>
+              <p>
+                En la parte inferior de la pantalla podrá observar sel siguiente botón, el cuál permitirá agregar una ubicación nueva.
+              </p>
+              <img src="./assets/img/add_icon.png" alt="icono_agregar_usuario" class="w-25 pb-3 pt-3">
+              <p>
+                Al presionar el botón mencionado, será enviado a la <a href="#Ubicacion">pantalla de ubicación</a>. En esta pantalla podrá seleccionar la ubicación en un mapa y asignarle un nombre.
+              </p>
+              <p>
+                En el listado de ubicaciones, cada ubicación tiene un recuadro y en cada recuadro, en la parte derecha, hay 2 botones. El ícono de lápiz permitirá modificar la ubicación seleccionada en la <a href="#Ubicacion">pantalla de ubicación</a>. El ícono de bote de basura es para eliminar la ubicación seleccionada, al dar click en este, aparecerá una de ventana de aviso con la leyenda: "Atención: ¿Está seguro de eliminar la ubicación *Nombre de ubicación*?". En caso de no estar seguro puede cancelar el proceso.
+              </p>
+              <img src="./assets/img/Administrator/Admin10.png" alt="ventana_eliminar_ubicacion" class="custom-img pb-3 pt-3">
+            </div>
+            <div class="col-md-6">
+                <img src="./assets/img/Administrator/Admin09.png" alt="pantalla_administrador_perfil" class="img-fluid w-75 pb-5 pt-5">
+            </div>
+        </div>
+      </div>
+
+      <!--Proyectos-->
+      <h1 class="border-top border-3 fs-4 text-danger pt-2">Proyectos</h1>
+      <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6">
+                <img src="./assets/img/Administrator/Admin11.png" alt="pantalla_inicio_sesion" class="img-fluid w-75 pb-5 pt-5">
+            </div>
+            <div class="col-md-6">
+                <p>
+                  En este apartado habrá un listado de los proyectos guardados en OrdiHub. En la parte inferior de la pantalla encontrará el siguiente botón.
+                </p>
+                <img src="./assets/img/add_icon.png" alt="icono_agregar_usuario" class="w-25 pb-3 pt-3">
+                <p>
+                  Al clickearlo podrá agregar un nuevo proyecto. Se abrirá una ventana para ingresar los datos de el proyecto.
+                </p>
+                <img src="./assets/img/Administrator/Admin12.png" alt="ventana_agregar_proyecto" class="w-75 pb-3 pt-3">
+                <p>
+                  Para confirmar la creacion de el proyecto hay que dar click en "Aceptar". Cabe aclarar que el número de proyecto es único, no puede haber otro proyecto con el mismo número.
+                </p>
+                <p>
+                  En cada proyecto hay 2 botones en la parte derecha. El ícono de bote de basura permite eliminar el proyecto seleccionado, el ícono de lápiz le enviará a la <a a href="#Ubicacion">pantalla de proyecto</a> para poder modificar todos los elementos del proyecto. En cada recuadro de proyecto, en la parte izquierda hay un icono de proyecto, este sirve para generar un reporte de proyecto en una <a href="#Reporte">pantalla de reporte</a>. Este reporte contendrá las actividades realizadas para el proyecto en un periodo de tiempo.
+                </p>
+            </div>
+        </div>
+      </div> 
+    </section>
+
+    <!--Administator-->
+    <section class="w-75 mx-auto text-center pt-5" id="Ingeniero">
+      <h1 class="p-3 fs-1 border-top border-3 text-danger">Ingeniero</h1>
+
+      <!--Perfíl-->
+      <h1 class="fs-4 text-danger">Perfíl</h1>
+      <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6">
+              <p>
+                Si el usuario que ingresó tiene el rol de ingeniero, encontrará el apartado de "Perfíl". 
+                En esta pantalla podrá ver y modificar sus credenciales. En esta pantalla también encontrará 
+                el botón para mostrar su contraseña.
+              </p>
+              <p>
+                En caso de querer modificar su nombre de usuario o contraseña, hay que cambiar el apartado 
+                que se necesite modificar y dar click en el botón "Modificar Usuario". Cabe mencionar que 
+                los nombres de usuario son únicos, por ende al querer poner un nombre de usuario ya existente, 
+                no se le permitirá.
+              </p>
+              <p>
+                Al presionar el botón mencionado, aparecerá una ventana de diálogo con el siguiente mensaje: 
+                "Atención: ¿Está seguro de modificar sus credenciales?". En caso de no estar seguro puede cancelar 
+                el proceso.
+              </p>
+              <img src="./assets/img/Administrator/Admin03.png" alt="ventana_dialogo_modificar_usuario" class="w-75 pb-3 pt-3">
+              <p>
+                El botón de la parte superior izquiera le permite al usuario cerrar sesión, de esta forma podrá 
+                regresar a la pantalla de inicio de sesión.
+              </p>
+              <img src="./assets/img/logout_icon.png" alt="icono_cerrar_sesion" class="w-25 pb-3 pt-3">
+              <p>
+                En la parte inferior de la pantalla podrá ver una barra de navegación, esta le permitirá navegar 
+                por las distintas pantallas de OrdiHub. Para pasar a otra pantalla hay que presionar el botón asignado.
+              </p>
+            </div>
+            <div class="col-md-6">
+                <img src="./assets/img/Engineer/Engin01.png" alt="pantalla_ingeniero_perfil" class="img-fluid w-75 pb-5 pt-5">
+            </div>
+            
+        </div>
+      </div>
+
+      <!--Proyectos-->
+      <h1 class="border-top border-3 fs-4 text-danger pt-2">Proyectos</h1>
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-6">
+            <img src="./assets/img/Engineer/Engin02.png" alt="pantalla_ingeniero_proyectos" class="img-fluid w-75 pb-5 pt-5">
+          </div>
+          <div class="col-md-6">
+            <p>
+              En cada proyecto hay 1 botón en la parte derecha. El ícono de lápiz le enviará a la <a a href="#Actividad">pantalla de actividad</a> para poder registrar una actividad dentro de el proyecto.
+            </p>
+            <img src="./assets/img/edit_icon.png" alt="icono_editar" class="pb-2">
+          </div>
+        </div>
+      </div> 
+
+      <!--Actividad-->
+      <h1 class="border-top border-3 fs-4 text-danger pt-2">Actividad</h1>
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-6">
+            <p>
+              Hay varios requisitos que se tienen que cumplir para poder registrar una actividad. Lo principal es aceptar el permiso de ubicación precisa mientras la aplicación esté en uso. De lo contrario aparecerá un error con la layenda "No se ha podido acceder a la ubicación" cuando se intente registrar una actividad. La razón de esto es que para registrar una actividad OrdiHub verifica que se esté en alguna ubicación de las registradas dentro del proyecto.
+            </p>
+            <img src="./assets/img/Engineer/Engin04.png" alt="ventana_permiso_ubicacion" class="w-75 pb-3 pt-3">
+          </div>
+          <div class="col-md-6">
+            <img src="./assets/img/Engineer/Engin03.png" alt="pantalla_ingeniero_proyectos" class="img-fluid w-75 pb-5 pt-5">
+          </div>
+        </div>
       </div> 
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
