@@ -32,9 +32,11 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#Ingeniero">Ingeniero</a>
                   </li>
-
                   <li class="nav-item">
                     <a class="nav-link">Supervisor</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#ApartadosGenerales">Apartados Generales</a>
                   </li>
               </ul>
           </div>
@@ -95,13 +97,13 @@
     <section class="w-75 mx-auto text-center pt-5" id="Administrator">
       <h1 class="p-3 fs-1 border-top border-3 text-danger">Administrador</h1>
 
-      <!--Perfíl-->
-      <h1 class="fs-4 text-danger">Perfíl</h1>
+      <!--Perfil-->
+      <h1 class="fs-4 text-danger">Perfil</h1>
       <div class="container">
         <div class="row d-flex align-items-center">
             <div class="col-md-6">
               <p>
-                Si el usuario que ingresó tiene el rol de administrador, encontrará el apartado de "Perfíl". En esta pantalla podrá ver y modificar sus credenciales. En esta pantalla también encontrará el botón para mostrar su contraseña.
+                Si el usuario que ingresó tiene el rol de administrador, encontrará el apartado de "Perfil". En esta pantalla podrá ver y modificar sus credenciales. En esta pantalla también encontrará el botón para mostrar su contraseña.
               </p>
               <p>
                 En caso de querer modificar su nombre de usuario o contraseña, hay que cambiar el apartado que se necesite modificar y dar click en el botón "Modificar Usuario". Cabe mencionar que los nombres de usuario son únicos, por ende al querer poner un nombre de usuario ya existente, no se le permitirá.
@@ -225,18 +227,22 @@
       </div> 
     </section>
 
-    <!--Administator-->
+    <!--Engineer-->
     <section class="w-75 mx-auto text-center pt-5" id="Ingeniero">
       <h1 class="p-3 fs-1 border-top border-3 text-danger">Ingeniero</h1>
 
-      <!--Perfíl-->
-      <h1 class="fs-4 text-danger">Perfíl</h1>
+      <!--Perfil-->
+      <h1 class="fs-4 text-danger">Perfil</h1>
       <div class="container">
         <div class="row d-flex align-items-center">
             <div class="col-md-6">
               <p>
-                Si el usuario que ingresó tiene el rol de ingeniero, encontrará el apartado de "Perfíl". 
-                En esta pantalla podrá ver y modificar sus credenciales. En esta pantalla también encontrará 
+                Si el usuario que ingresó tiene el rol de ingeniero, encontrará el apartado de "Perfil". Si es la primera vez que se abre OrdiHub
+                en el dispositivo, entonces aparecerá una ventana solicitando permisos de acceso a la ubicación. Más detalles en <a a href="#Actividad">actividad</a>.
+                También podría llegar a salir una ventana solicitando activar la ubicación en caso de no tenerla.  
+              </p>
+              <p>
+                En la pantalla "Perfil" podrá ver y modificar sus credenciales. En esta pantalla también encontrará 
                 el botón para mostrar su contraseña.
               </p>
               <p>
@@ -257,7 +263,7 @@
               </p>
               <img src="./assets/img/logout_icon.png" alt="icono_cerrar_sesion" class="w-25 pb-3 pt-3">
               <p>
-                En la parte inferior de la pantalla podrá ver una barra de navegación, esta le permitirá navegar 
+                En la parte inferior de la pantalla podrá ver una barra de navegación, esta le permitirá desplazarse 
                 por las distintas pantallas de OrdiHub. Para pasar a otra pantalla hay que presionar el botón asignado.
               </p>
             </div>
@@ -277,25 +283,113 @@
           </div>
           <div class="col-md-6">
             <p>
+              Aquí encontrará un listado de los proyectos que le fueron asignados. Cada proyecto cuenta con el nombre de la empresa, el número de proyecto y la descripción del mismo.
+            </p>
+            <p>
               En cada proyecto hay 1 botón en la parte derecha. El ícono de lápiz le enviará a la <a a href="#Actividad">pantalla de actividad</a> para poder registrar una actividad dentro de el proyecto.
             </p>
             <img src="./assets/img/edit_icon.png" alt="icono_editar" class="pb-2">
           </div>
         </div>
       </div> 
-
-      <!--Actividad-->
-      <h1 class="border-top border-3 fs-4 text-danger pt-2">Actividad</h1>
+      
+      <!--Historial-->
+      <h1 class="border-top border-3 fs-4 text-danger pt-2">Historial</h1>
       <div class="container">
         <div class="row d-flex align-items-center">
           <div class="col-md-6">
             <p>
-              Hay varios requisitos que se tienen que cumplir para poder registrar una actividad. Lo principal es aceptar el permiso de ubicación precisa mientras la aplicación esté en uso. De lo contrario aparecerá un error con la layenda "No se ha podido acceder a la ubicación" cuando se intente registrar una actividad. La razón de esto es que para registrar una actividad OrdiHub verifica que se esté en alguna ubicación de las registradas dentro del proyecto.
+              Aquí encontrará un listado de las actividades que ya estén guardadas en la base de datos. La diferencia con el historial de la <a a href="#Actividad">pantalla de actividad</a> 
+              es que aquí muestra las actividades de todos los proyectos. Cada proyecto cuenta con el nombre de la empresa, la descripción de la actividad realizada y la fecha de entrada y salida.       
+              Si quisiera ver más detalles de la actividad, puede dar click en el cuadro de la misma y aparecerá una ventana con toda la información.
             </p>
-            <img src="./assets/img/Engineer/Engin04.png" alt="ventana_permiso_ubicacion" class="w-75 pb-3 pt-3">
+            <img src="./assets/img/Engineer/Engin09.png" alt="ventana_actividad_proyectos" class="w-75 pb-3 pt-3">
           </div>
           <div class="col-md-6">
-            <img src="./assets/img/Engineer/Engin03.png" alt="pantalla_ingeniero_proyectos" class="img-fluid w-75 pb-5 pt-5">
+            <img src="./assets/img/Engineer/Engin08.png" alt="pantalla_ingeniero_proyectos" class="img-fluid w-75 pb-5 pt-5">
+          </div>
+        </div>
+      </div> 
+    </section>
+
+    <!--General-->
+    <section class="w-75 mx-auto text-center pt-5" id="ApartadosGenerales">
+      <h1 class="p-3 fs-1 border-top border-3 text-danger">Apartados generales</h1>
+
+      <!--Actividad-->
+      <h1 class="fs-4 text-danger" id="Actividad">Actividad</h1>
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-6">
+            <p>
+              Hay varios requisitos que se tienen que cumplir para poder registrar una actividad. Lo principal es aceptar el permiso 
+              de ubicación precisa mientras la aplicación esté en uso. De lo contrario aparecerá un error con la la leyenda "No se ha 
+              podido acceder a la ubicación" cuando se intente registrar una actividad. La razón de esto es que para registrar una 
+              actividad OrdiHub verifica que se esté en alguna ubicación de las registradas dentro del proyecto.
+            </p>
+            <img src="./assets/img/Engineer/Engin04.png" alt="ventana_permiso_ubicacion" class="w-75 pb-3 pt-3">
+            <p>
+              Después de verificar los permisos de ubicación, hay que seleccionar el tipo de atividad que se realizará, el campo subtipo depende
+              de el campo tipo, por ende los elementos de el campo subtipo cambiarán dependiendo de el tipo seleccionado, mismo caso con la descripción y el subtipo.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img src="./assets/img/Engineer/Engin03.png" alt="pantalla_actividad" class="img-fluid w-75 pb-5 pt-5">
+          </div>
+        </div>
+
+        <div class="row d-flex align-items-center">
+          <div class="col-md-6">
+            <img src="./assets/img/Engineer/Engin05.png" alt="pantalla_actividad_salida" class="img-fluid w-75 pb-5 pt-5">
+          </div>
+          <div class="col-md-6">
+            <p>
+              Al dar click en el botón "Registrar entrada", OrdiHub accederá a su ubicación y calculará la distancia de el usuario hasta las ubicaciones guardadas 
+              en el proyecto seleccionado, si se detecta cerca de alguna entonces aparecerá el nombre de la ubicación, la fecha de entrada y los datos ingresados en la actividad quedarán fijos, excepto las notas.
+            </p>
+            <p>
+              Las notas pueden modificarse, pero para guardar los cambios realizados hay que hacer click en "Actualizar notas", esta no es la única forma, también se puede dar click en "Registrar salida" o el botón
+              de regresar. Si no se hace nada de lo antes mencionado, entonces los cambios realizados no serán registrados.
+            </p>
+            <img src="./assets/img/back_icon.png" alt="icono_regresar" class="w-25 pb-3 pt-3">
+          </div>
+        </div>
+
+        <div class="row d-flex align-items-center">
+          <div class="col-md-6">
+            <p>
+              Después de haber terminado con la actividad, hay que dar click en "Registrar salida", se volverá a acceder a la ubicación, pero ahora sólo se calculará la distancia con la ubicación que 
+              se guardó al registrar la entrada, es decir que para registrar la salida, hay que estar en el mismo lugar (es importante tomar esto en cuenta y recordar registrar la salida antes de retirarse)
+              . Al hacer lo anterior, la actividad se guardará en memoria interna (aún no estará en la base de datos), para pasar las actividades de memoria a la base de datos hay qu presionar el siguiente botón.
+            </p>
+            <img src="./assets/img/upload_icon.png" alt="icono_subir" class="w-25 pb-3 pt-3">
+            <p>
+              Cuando este botón esté en rojo significa que hay actividades pendientes por subir. Al presionarlo se comenzarán a subir todas las actividades pendientes que estén en la memoria interna, esto pasará solo si hay una conexión a internet disponible, en caso de que no sea así, aparecerá
+              una ventana de aviso con la leyenda "No hay conexión disponible, intente más tarde".
+            </p>
+            <img src="./assets/img/Engineer/Engin07.png" alt="ventana_sin_conexion" class="w-75 pb-3 pt-3">
+          </div>
+          <div class="col-md-6">
+            <img src="./assets/img/Engineer/Engin06.png" alt="pantalla_Actividad_salida_registrada" class="img-fluid w-75 pb-5 pt-5">
+          </div>
+        </div>
+
+      </div> 
+
+      <h1 class="border-top border-3 fs-4 text-danger pt-2">Actividad - Historial</h1>
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-6">
+            <img src="./assets/img/Engineer/Engin10.png" alt="pantalla_actividad_historial" class="img-fluid w-75 pb-5 pt-5">
+          </div>
+          <div class="col-md-6">
+            <p>
+              Aquí encontrará un listado de las actividades que ya estén guardadas en la base de datos. La diferencia la pantalla de historial de el usuario 
+              es que aquí muestra las actividades realizadas en el proyecto en el que se encuentra. Cada proyecto cuenta con el nombre de la empresa, la descripción 
+              de la actividad realizada y la fecha de entrada y salida.       
+              Si quisiera ver más detalles de la actividad, puede dar click en el cuadro de la misma y aparecerá una ventana con toda la información.
+            </p>
+            <img src="./assets/img/Engineer/Engin09.png" alt="ventana_actividad_proyecto" class="w-75 pb-3 pt-3">
           </div>
         </div>
       </div> 
